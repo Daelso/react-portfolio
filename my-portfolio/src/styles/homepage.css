@@ -1,0 +1,26 @@
+.test{
+    border-radius: 35%;
+    background-color: #303736;
+    color: #62b0a5;
+    text-align: center;
+    font-size: 0.8em;
+    font: 1.3rem Inconsolata, monospace;
+    clear: both;
+    position: relative;
+    margin-top: 0px; /* negative value of footer height */
+    clear:both;
+}
+
+.red{
+    color:red!important
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 150px;
+}
+
+

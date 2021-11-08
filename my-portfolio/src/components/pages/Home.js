@@ -1,21 +1,24 @@
 import React from 'react';
+import pfp from '../../imgs/pfp.jpg'
+import '../../styles/homepage.css'
+import github from '../../imgs/github.png'
 
 export default function Home() {
   return (
-    <div>
+    <div className="test">
       <h1>Home Page</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
+          Welcome to my page, my name is Chase Murtaugh. Check out some of my links below!
       </p>
+	  <img className="test" 
+      src={pfp}
+	  alt= "My PFP"
+	  />
+    <footer className= "footer">
+	<a className="links" href='https://github.com/Daelso'><img src={github} alt="Github"/></a>
+	<a href='https://github.com/Daelso'><img src={github} alt="Github"/></a>
+	<a href='https://github.com/Daelso'><img src={github} alt="Github"/></a>
+	  </footer>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import pfp from '../../imgs/pfp.jpg'
 import '../../styles/homepage.css'
 import github from '../../imgs/github.png'
+import linkedin from '../../imgs/linkedin.png'
 
 export default function Home() {
   return (
@@ -14,9 +15,20 @@ export default function Home() {
       src={pfp}
 	  alt= "My PFP"
 	  />
-    <footer className= "footer">
-	<a className="links" href='https://github.com/Daelso'><img src={github} alt="Github"/></a>
-	  </footer>
+
+<div class="footerWrap">
+    <div class="footer">
+      <div class="footerContent">
+      <a className="links" href='https://github.com/Daelso'><img src={github} alt="Github"/></a>
+      &nbsp;
+      <a className="links" href='https://www.linkedin.com/in/chase-murtaugh-71ba82109/'><img src={linkedin} alt="LinkedIn"/></a>
+      &nbsp;
+      <a className="links" href='https://github.com/Daelso'><img src={github} alt="Github"/></a>
+      &nbsp;
+      </div>     
+    </div>
+</div>
+
     </div>
   );
 }

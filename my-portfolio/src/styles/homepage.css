@@ -11,20 +11,31 @@
     clear:both;
 }
 
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer*/ 
-    height: 150px;
+.footerWrap {
+    width:100%;
+    position:fixed;
+    bottom: 0px;
 }
+.footer {
+    width:400px;
+    margin:auto;
+}
+.footerContent {
+    float:left;
+    width:100%;
+    padding:20px 0;
+    margin-left: 10px;
+}
+.footer p {float:left; width:100%; text-align:center; }
 
 .links{
     opacity: 50%;
+    filter: grayscale(100%);
 }
 
 .links:hover{
     opacity: 100%;
+    filter: grayscale(0%);
 }
 
 .nav>li>a:hover,

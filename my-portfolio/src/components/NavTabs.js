@@ -3,13 +3,13 @@ import '../styles/homepage.css'
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-pills large nav-justified red">
-      <li className="nav-item red">
+    <ul className="nav nav-pills large nav-justified">
+      <li className="nav-item">
       <a
           href="#home"
           onClick={() => handlePageChange('Home')}
 
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Home' ? 'nav-link' : 'nav-link'}
         >
           Chase Murtaugh
         </a>     
@@ -19,7 +19,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
 
-          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Portfolio' ? 'nav-link' : 'nav-link'}
         >
           Portfolio
         </a>
@@ -29,7 +29,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           href="#contact"
 
           onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Contact' ? 'nav-link' : 'nav-link'}
         >
           Contact
         </a>

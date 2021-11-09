@@ -11,10 +11,6 @@
     clear:both;
 }
 
-.red{
-    color:red!important
-}
-
 .footer{
     position: fixed;
     bottom: 0;
@@ -24,3 +20,13 @@
 }
 
 
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+   background-color: #62b0a5;
+   color:white
+}
+
+.nav-link{
+    color: white;
+}

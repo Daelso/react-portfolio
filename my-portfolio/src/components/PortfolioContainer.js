@@ -8,7 +8,6 @@ import Contact from './pages/Contact';
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
-  // TODO: Add a comment describing the functionality of this method
   const renderPage = () => {
     if (currentPage === 'Home') {
       return <Home />;

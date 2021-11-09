@@ -19,7 +19,13 @@
     height: 150px;
 }
 
+.links{
+    opacity: 50%;
+}
 
+.links:hover{
+    opacity: 100%;
+}
 
 .nav>li>a:hover,
 .nav>li>a:focus {

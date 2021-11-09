@@ -23,10 +23,10 @@
 
 .nav>li>a:hover,
 .nav>li>a:focus {
-   background-color: #62b0a5;
-   color:white
+   background-color: #62b0a5!important;
+   color:white!important
 }
 
 .nav-link{
-    color: white;
+    color: #62b0a5!important;
 }

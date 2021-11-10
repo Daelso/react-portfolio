@@ -1,26 +1,72 @@
-import React from 'react';
 import github from '../../imgs/github.png'
 import linkedin from '../../imgs/linkedin.png'
 import resumeIcon from '../../imgs/resume.png'
 import resumePDF from '../../imgs/resume.pdf'
 
-export default function Contact() {
+import React, { useState } from 'react';
+
+function Form() {
+  // Here we set two state variables for firstName and lastName using `useState`
+  const [firstName, setFirstName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('')
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { name, value } = e.target;
+
+    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
+    return  name === 'firstName' ? setFirstName(value) : name === 'email' ? setEmail(value) : setMessage(value)
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // Alert the user their first and last name, clear the inputs
+    alert(`Message submitted, thank you!`);
+    setFirstName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
     <div>
-      <h1>Contact Page</h1>
       <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
+        Want to contact me? Fill in the form below!
       </p>
+      <form className="form">
+        <input
+          value={firstName}
+          name="firstName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Name"
+        />
+        <br/>
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Email"
+        />
+        <br/>
+        <input
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Input your message!"
+        />
+        <br/>
+        <button type="button" onClick={handleFormSubmit}>
+          Send
+        </button>
+      </form>
+
+
+
       <div class="footerWrap">
     <div class="footer">
       <div class="footerContent">
@@ -33,7 +79,9 @@ export default function Contact() {
       </div>     
     </div>
 </div>
-</div>
-  
+    </div>
   );
 }
+
+export default Form;
+

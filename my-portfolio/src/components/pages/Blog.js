@@ -67,8 +67,8 @@ export default function Blog() {
       ))}
     </div>
       </p>
-      <div class="footer">
-      <div class="footerContent">
+      <div className="footer">
+      <div className="footerContent">
       <a className="links" href='https://github.com/Daelso' target = "_blank" rel = "noreferrer"><img src={github} alt="Github"/></a>
       &nbsp;
       <a className="links" href='https://www.linkedin.com/in/chase-murtaugh-71ba82109/' target = "_blank" rel = "noreferrer"><img src={linkedin} alt="LinkedIn"/></a>

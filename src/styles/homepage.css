@@ -31,8 +31,9 @@
     opacity: 50%;
 }
 
-.links:hover,
-.links:focus{
+.footerWrap>.footer>.footerContent>.links:hover,
+.footerWrap>.footer>.footerContent>.links:focus
+{
     opacity: 100%!important;
     filter: grayscale(0%)!important;
 }

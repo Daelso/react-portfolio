@@ -11,8 +11,8 @@ export default function Card(props) {
   return (
     <div>
 
-<div class="container">
-  <div class="row">
+<div className="container">
+  <div className="row">
 
     <div className="card w-50 mx-auto" style={cardStyle}>
         <img

@@ -29,12 +29,12 @@
 
 .links{
     opacity: 50%;
-    filter: grayscale(100%);
 }
 
-.links:hover{
-    opacity: 100%;
-    filter: grayscale(0%);
+.links:hover,
+.links:focus{
+    opacity: 100%!important;
+    filter: grayscale(0%)!important;
 }
 
 .nav>li>a:hover,

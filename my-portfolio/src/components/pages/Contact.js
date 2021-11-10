@@ -2,6 +2,7 @@ import github from '../../imgs/github.png'
 import linkedin from '../../imgs/linkedin.png'
 import resumeIcon from '../../imgs/resume.png'
 import resumePDF from '../../imgs/resume.pdf'
+import { validateEmail } from '../../components/helpers';
 
 import React, { useState } from 'react';
 
@@ -10,6 +11,7 @@ function Form() {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('')
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -19,15 +21,25 @@ function Form() {
     return  name === 'firstName' ? setFirstName(value) : name === 'email' ? setEmail(value) : setMessage(value)
   };
 
+
+
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
+
+    if (!validateEmail(email) || !firstName || !message) {
+      setErrorMessage('Please enter a valid email and fill out each text box!');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
 
     // Alert the user their first and last name, clear the inputs
     alert(`Message submitted, thank you!`);
     setFirstName('');
     setEmail('');
     setMessage('');
+    setErrorMessage('');
   };
 
   return (
@@ -48,7 +60,7 @@ function Form() {
           value={email}
           name="email"
           onChange={handleInputChange}
-          type="text"
+          type="email" required
           placeholder="Email"
         />
         <br/>
@@ -64,8 +76,11 @@ function Form() {
           Send
         </button>
       </form>
-
-
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
 
       <div class="footerWrap">
     <div class="footer">

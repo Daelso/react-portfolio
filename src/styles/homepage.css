@@ -27,7 +27,7 @@
 }
 .footer p {float:left; width:100%; text-align:center; }
 
- .links{
+ /* .links{
     opacity: 50%;
     filter: grayscale(50%);
 }
@@ -38,7 +38,7 @@
 {
     opacity: 100%;
     filter: grayscale(0%);
-} */
+} */ */
 
 .nav>li>a:hover,
 .nav>li>a:focus {

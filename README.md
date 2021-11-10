@@ -1,14 +1,13 @@
-# Title: 19 PWA with Offline Functionality!
+# Title: 20 React Portfolio
 
 ![badge](https://img.shields.io/badge/license-MIT-darkred) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) 
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
 
 ## Description:
+This project was made to better understand React.js. It went fairly well until deployment. For whatever reason the deployment refuses to show my images in color, every bit of css works except for 1 or 2 lines, even the lines above and below it function properly. It is a mystery I was sadly unable to solve. However, I walked away with a better understanding of React and I'm quite happy for it.
 
-This project was a great chance to force myself to really understand indexing and cacheing of data with MongoDB. While most of the project is built out, it was nice to be able to get practice in storing data whilst offline then pushing it when online availability returns.
-
-![Demo photo](https://i.gyazo.com/493e6c91ed6d0c769ef5ddbff8841e54.png)
+![Demo photo](https://i.gyazo.com/bc05dd3122d89e68749c312b9e233df3.png)
 
 
 ## Table of Contents
@@ -22,13 +21,11 @@ This project was a great chance to force myself to really understand indexing an
 
 ## Installation Instructions:
 
-This app requires a number of dependencies which can be installed via running ```npm i``` in the terminal. It will work locally without anything else. To deploy it, you will need to attach your mongoDB through Atlas and Heroku, though the server.js is already staged for that.
-
-I recommended running the program locally via ```npm run live``` to create a nodemon session.
+This app requires a number of dependencies which can be installed via running ```npm i``` in the terminal. It will work locally without anything else.
 
 ## Usage:
 
-To create a budget tracker able to be updated while offline and retain those entries when brought back online.
+To recreate my portfolio using react.
 
 ## Contributing:
 
@@ -48,4 +45,4 @@ This application is covered under the MIT license.
   Feel free to email me at: cmurtau@g.clemson.edu
   
 ## Deployment: 
-https://offline-budget-tracker-penn.herokuapp.com/
+https://daelso.github.io/react-portfolio/#home

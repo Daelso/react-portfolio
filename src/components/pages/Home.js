@@ -9,11 +9,13 @@ import resumePDF from '../../imgs/resume.pdf'
 export default function Home() {
   function mouseOver(event){
     event.target.style.opacity = '100%';
+    event.target.style.filter = "grayscale(0%)";
   }
 
   function mouseOut(event){
-    event.target.style.opacity = '100%';
-    event.target.style.filter = "grayscale(0%)";
+    event.target.style.opacity = '50%';
+    event.target.style.filter = "grayscale(50%)";
+
   }
 
 
@@ -38,9 +40,9 @@ export default function Home() {
       <div className="footerContent">
       <a className="links" onMouseOver={mouseOver} onMouseOut={mouseOut} href='https://github.com/Daelso' target = "_blank" rel = "noreferrer"><img src={github} alt="Github"/></a>
       &nbsp;
-      <a className="links" href='https://www.linkedin.com/in/chase-murtaugh-71ba82109/' target = "_blank" rel = "noreferrer"><img src={linkedin} alt="LinkedIn"/></a>
+      <a className="links" onMouseOver={mouseOver} onMouseOut={mouseOut} href='https://www.linkedin.com/in/chase-murtaugh-71ba82109/' target = "_blank" rel = "noreferrer"><img src={linkedin} alt="LinkedIn"/></a>
       &nbsp;
-      <a className="links" target = "_blank" rel = "noreferrer" href={resumePDF}><img src={resumeIcon} alt="Resume"/></a>
+      <a className="links" onMouseOver={mouseOver} onMouseOut={mouseOut} target = "_blank" rel = "noreferrer" href={resumePDF}><img src={resumeIcon} alt="Resume"/></a>
       &nbsp;
       </div>     
     </div>

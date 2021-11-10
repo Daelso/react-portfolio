@@ -27,16 +27,18 @@
 }
 .footer p {float:left; width:100%; text-align:center; }
 
-.links{
+ .links{
     opacity: 50%;
+    filter: grayscale(50%);
 }
 
-.footerWrap>.footer>.footerContent>.links:hover,
+
+/* .footerWrap>.footer>.footerContent>.links:hover,
 .footerWrap>.footer>.footerContent>.links:focus
 {
-    opacity: 100%!important;
-    filter: grayscale(0%)!important;
-}
+    opacity: 100%;
+    filter: grayscale(0%);
+} */
 
 .nav>li>a:hover,
 .nav>li>a:focus {

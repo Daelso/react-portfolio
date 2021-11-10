@@ -83,7 +83,7 @@ function Form() {
           placeholder="Input your message!"
         />
         <br/>
-        <button type="button" className="btn btn-dark" onClick={handleFormSubmit}>
+        <button type="button" className="btn btn-dark buttonGuy" onClick={handleFormSubmit}>
           Send
         </button>
       </form>

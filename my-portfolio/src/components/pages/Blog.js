@@ -69,11 +69,11 @@ export default function Blog() {
       </p>
       <div class="footer">
       <div class="footerContent">
-      <a className="links" href='https://github.com/Daelso'><img src={github} alt="Github"/></a>
+      <a className="links" href='https://github.com/Daelso' target = "_blank" rel = "noreferrer"><img src={github} alt="Github"/></a>
       &nbsp;
-      <a className="links" href='https://www.linkedin.com/in/chase-murtaugh-71ba82109/'><img src={linkedin} alt="LinkedIn"/></a>
+      <a className="links" href='https://www.linkedin.com/in/chase-murtaugh-71ba82109/' target = "_blank" rel = "noreferrer"><img src={linkedin} alt="LinkedIn"/></a>
       &nbsp;
-      <a className="links" href={resumePDF}><img src={resumeIcon} alt="Resume"/></a>
+      <a className="links" href={resumePDF} target = "_blank" rel = "noreferrer"><img src={resumeIcon} alt="Resume"/></a>
       &nbsp;
       </div>     
     </div>

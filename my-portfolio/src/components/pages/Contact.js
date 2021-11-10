@@ -1,4 +1,8 @@
 import React from 'react';
+import github from '../../imgs/github.png'
+import linkedin from '../../imgs/linkedin.png'
+import resumeIcon from '../../imgs/resume.png'
+import resumePDF from '../../imgs/resume.pdf'
 
 export default function Contact() {
   return (
@@ -17,6 +21,19 @@ export default function Contact() {
         conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
         rhoncus. Etiam vel condimentum magna, quis tempor nulla.
       </p>
+      <div class="footerWrap">
+    <div class="footer">
+      <div class="footerContent">
+      <a className="links" href='https://github.com/Daelso'><img src={github} alt="Github"/></a>
+      &nbsp;
+      <a className="links" href='https://www.linkedin.com/in/chase-murtaugh-71ba82109/'><img src={linkedin} alt="LinkedIn"/></a>
+      &nbsp;
+      <a className="links" href={resumePDF}><img src={resumeIcon} alt="Resume"/></a>
+      &nbsp;
+      </div>     
     </div>
+</div>
+</div>
+  
   );
 }

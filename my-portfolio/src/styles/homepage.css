@@ -3,7 +3,6 @@
     background-color: #303736;
     color: #62b0a5;
     text-align: center;
-    font-size: 0.8em;
     font: 1.3rem Inconsolata, monospace;
     clear: both;
     position: relative;
@@ -47,3 +46,32 @@
 .nav-link{
     color: #62b0a5!important;
 }
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+@media only screen and (max-width: 700px) {
+    .links, .footer, .footerContent, .footerWrap {
+        transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+        -webkit-transform: scale(0.8, 0.8);
+        margin-left: auto;
+        width: auto;
+        padding:none;
+        
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .test{
+        font: 1rem Inconsolata, monospace;
+        clear: both;
+
+
+    }
+
+  } 

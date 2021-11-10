@@ -2,4 +2,30 @@
     margin: 0 auto; /* Added */
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
+    box-shadow: 5px 5px 5px black;
+    padding: 3px;
 }
+
+.button-wrapper .btn {
+    margin-bottom:5px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .card {
+        font: 0.8rem Inconsolata, monospace;
+        width: auto;
+        height: auto;
+    }
+    .card-body{
+        font: 0.8rem Inconsolata, monospace;
+        width: 100%;
+        height: auto;
+    }
+    .card-img-top{
+        height: auto;
+        width: auto;
+
+    }
+
+  }

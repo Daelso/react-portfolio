@@ -27,7 +27,7 @@
 }
 .footer p {float:left; width:100%; text-align:center; }
 
- .links{
+.footerWrap>.footer>.footerContent>.links{
     opacity: 50%;
     filter: grayscale(50%);
 }
